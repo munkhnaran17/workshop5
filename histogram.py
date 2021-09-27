@@ -4,10 +4,10 @@ import sys
 
 total = 0
 res = list()
-for i in sys.stdin.readlines():
-	wordCount = i.split()
-	res.append((wordCount[0],int(wordCount[1])))
-	total += int(wordCount[1])
+for l in sys.stdin.readlines():
+	wordc = l.split()
+	res.append((wordc[0],int(wordc[1])))
+	total += int(wordc[1])
 	
 for w,c in res:
 	print(w.ljust(15),"\t[",sep='',end='')
